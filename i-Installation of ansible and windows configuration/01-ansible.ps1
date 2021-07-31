@@ -18,6 +18,8 @@ apt-get install vim
 apt install openssh-server
 systemctl status ssh
 
+
+# Installation of ansible
 sudo apt-get install software-properties-common 
 
 sudo apt-add-repository ppa:ansible/ansible
@@ -26,7 +28,7 @@ sudo apt-get install ansible
 
 sudo add-apt-repository --remove ppa:ansible/ansible
 
-
+# Flow for searching ansible configuration
 ANSIBLE_CFG: This is an environment variable
 ~/ansible.cfg: This is in the current directory
 ansible.cfg: This is in the users home directory
@@ -104,7 +106,9 @@ ansible_winrm_server_cert_validation= ignore
 
 
 now we can run commands 
-ansible windows -i hosts -m raw -a "ping 8.8.8.8" -u dinesh -k 
+ansible windows -i hosts -m raw -a "ping 8.8.8.8" 
+
+-u dinesh -k 
 
 ansible windows -i hosts -m script -a "test.ps1" -u dinesh -k
 

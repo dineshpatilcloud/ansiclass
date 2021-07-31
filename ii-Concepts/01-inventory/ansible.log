@@ -127,3 +127,405 @@
     "changed": false, 
     "ping": "pong"
 }
+2021-07-24 07:25:24,736 p=4574 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with yaml plugin: We
+were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object
+could be decoded  Syntax Error while loading YAML.   did not find expected <document start>  The error
+appears to be in '/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts': line 4, column 1, but may be
+elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[simplegroup] winsrv1 ^ here
+
+2021-07-24 07:25:24,736 p=4574 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with ini plugin:
+/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts:8: Expected key=value host variable assignment,
+got: :
+
+2021-07-24 07:25:24,736 p=4574 u=adminuser n=ansible | [WARNING]: Unable to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts as an inventory source
+
+2021-07-24 07:25:24,737 p=4574 u=adminuser n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-07-24 07:25:24,737 p=4574 u=adminuser n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2021-07-24 07:25:24,738 p=4574 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: azwindows
+
+2021-07-24 07:26:17,850 p=4598 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with yaml plugin: We
+were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object
+could be decoded  Syntax Error while loading YAML.   did not find expected <document start>  The error
+appears to be in '/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts': line 4, column 1, but may be
+elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[simplegroup] winsrv1 ^ here
+
+2021-07-24 07:26:17,850 p=4598 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with ini plugin:
+/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts:14: Expected key=value host variable assignment,
+got: ansible_become
+
+2021-07-24 07:26:17,850 p=4598 u=adminuser n=ansible | [WARNING]: Unable to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts as an inventory source
+
+2021-07-24 07:26:17,851 p=4598 u=adminuser n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-07-24 07:26:17,851 p=4598 u=adminuser n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2021-07-24 07:26:17,852 p=4598 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: azwindows
+
+2021-07-24 07:27:07,742 p=4616 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with yaml plugin: We
+were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object
+could be decoded  Syntax Error while loading YAML.   did not find expected <document start>  The error
+appears to be in '/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts': line 4, column 1, but may be
+elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[simplegroup] winsrv1 ^ here
+
+2021-07-24 07:27:07,744 p=4616 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with ini plugin:
+/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts:14: Expected key=value host variable assignment,
+got: ansible_become
+
+2021-07-24 07:27:07,745 p=4616 u=adminuser n=ansible | [WARNING]: Unable to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts as an inventory source
+
+2021-07-24 07:27:07,746 p=4616 u=adminuser n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-07-24 07:27:07,746 p=4616 u=adminuser n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2021-07-24 07:27:07,747 p=4616 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: azwindows
+
+2021-07-24 07:27:23,076 p=4629 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:27:23,088 p=4629 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with yaml plugin: We
+were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object
+could be decoded  Syntax Error while loading YAML.   did not find expected <document start>  The error
+appears to be in '/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts': line 4, column 1, but may be
+elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[simplegroup] winsrv1 ^ here
+
+2021-07-24 07:27:23,089 p=4629 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with ini plugin:
+/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts:14: Expected key=value host variable assignment,
+got: ansible_become
+
+2021-07-24 07:27:23,091 p=4629 u=adminuser n=ansible | [WARNING]: Unable to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts as an inventory source
+
+2021-07-24 07:27:23,091 p=4629 u=adminuser n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-07-24 07:27:23,092 p=4629 u=adminuser n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2021-07-24 07:27:23,093 p=4629 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: azwindows
+
+2021-07-24 07:27:27,400 p=4642 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:27:27,401 p=4642 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:27:27,413 p=4642 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with yaml plugin: We
+were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object
+could be decoded  Syntax Error while loading YAML.   did not find expected <document start>  The error
+appears to be in '/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts': line 4, column 1, but may be
+elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[simplegroup] winsrv1 ^ here
+
+2021-07-24 07:27:27,414 p=4642 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with ini plugin:
+/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts:14: Expected key=value host variable assignment,
+got: ansible_become
+
+2021-07-24 07:27:27,414 p=4642 u=adminuser n=ansible | [WARNING]: Unable to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts as an inventory source
+
+2021-07-24 07:27:27,414 p=4642 u=adminuser n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-07-24 07:27:27,415 p=4642 u=adminuser n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2021-07-24 07:27:27,415 p=4642 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: azwindows
+
+2021-07-24 07:27:27,465 p=4642 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:27:27,466 p=4642 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:27:27,466 p=4642 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:27:27,466 p=4642 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:27:27,466 p=4642 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:27:27,466 p=4642 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:27:27,467 p=4642 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:27:27,467 p=4642 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:27:27,467 p=4642 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:27:27,467 p=4642 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:27:27,467 p=4642 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:27:27,468 p=4642 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:27:27,468 p=4642 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:27:27,468 p=4642 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:27:27,468 p=4642 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:29:08,264 p=4671 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:29:08,264 p=4671 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:29:08,274 p=4671 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with yaml plugin: We
+were unable to read either as JSON nor YAML, these are the errors we got from each: JSON: No JSON object
+could be decoded  Syntax Error while loading YAML.   did not find expected <document start>  The error
+appears to be in '/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts': line 4, column 1, but may be
+elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[simplegroup] winsrv1 ^ here
+
+2021-07-24 07:29:08,275 p=4671 u=adminuser n=ansible | [WARNING]:  * Failed to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts with ini plugin:
+/home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts:14: Expected key=value host variable assignment,
+got: ansible_become
+
+2021-07-24 07:29:08,275 p=4671 u=adminuser n=ansible | [WARNING]: Unable to parse /home/adminuser/ansiclass/ii-Concepts/01-inventory/hosts as an inventory source
+
+2021-07-24 07:29:08,275 p=4671 u=adminuser n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-07-24 07:29:08,276 p=4671 u=adminuser n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does
+not match 'all'
+
+2021-07-24 07:29:08,276 p=4671 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: winhost
+
+2021-07-24 07:29:08,327 p=4671 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:29:08,327 p=4671 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:29:08,327 p=4671 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:29:08,327 p=4671 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:29:08,327 p=4671 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:29:08,327 p=4671 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:29:08,328 p=4671 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:29:08,329 p=4671 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:29:08,329 p=4671 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:31:55,955 p=4750 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:31:55,956 p=4750 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:31:56,021 p=4750 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:31:56,021 p=4750 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:31:56,022 p=4750 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:31:56,022 p=4750 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:31:56,022 p=4750 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:31:56,022 p=4750 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:31:56,022 p=4750 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:31:56,023 p=4750 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:31:56,023 p=4750 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:31:56,023 p=4750 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:31:56,023 p=4750 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:31:56,023 p=4750 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:31:56,023 p=4750 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:31:56,024 p=4750 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:31:56,024 p=4750 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:31:56,053 p=4750 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:32:06,269 p=4750 u=adminuser n=ansible | winhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host winhost port 22: Connection timed out", 
+    "unreachable": true
+}
+2021-07-24 07:35:03,829 p=4801 u=adminuser n=ansible | ansiblemaster | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'ansiblemaster,10.0.2.4' (ECDSA) to the list of known hosts.\r\nadminuser@ansiblemaster: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2021-07-24 07:36:16,652 p=4842 u=adminuser n=ansible | ansiblemaster | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: adminuser@ansiblemaster: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2021-07-24 07:39:06,092 p=4882 u=adminuser n=ansible | ansiblemaster | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: adminuser@ansiblemaster: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2021-07-24 07:41:14,816 p=4918 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use /usr/bin/python3, but is 
+using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will
+ default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information. 
+This feature will be removed in version 2.12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-07-24 07:41:14,817 p=4918 u=adminuser n=ansible | ansiblemaster | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2021-07-24 07:43:32,150 p=5115 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:43:32,150 p=5115 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:43:32,223 p=5115 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:43:32,223 p=5115 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:43:32,224 p=5115 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:43:32,224 p=5115 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:43:32,224 p=5115 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:43:32,224 p=5115 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:43:32,224 p=5115 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:43:32,224 p=5115 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:43:32,225 p=5115 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:43:32,225 p=5115 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:43:32,225 p=5115 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:43:32,225 p=5115 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:43:32,225 p=5115 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:43:32,225 p=5115 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:43:32,226 p=5115 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:43:32,257 p=5115 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:43:32,415 p=5115 u=adminuser n=ansible | winhost | FAILED! => {
+    "msg": "winrm or requests is not installed: No module named winrm"
+}
+2021-07-24 07:45:31,141 p=10427 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:45:31,142 p=10427 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:45:31,266 p=10427 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:45:31,267 p=10427 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:45:31,268 p=10427 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:45:31,268 p=10427 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:45:31,268 p=10427 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:45:31,268 p=10427 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:45:31,268 p=10427 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:45:31,268 p=10427 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:45:31,269 p=10427 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:45:31,295 p=10427 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:45:48,217 p=10427 u=adminuser n=ansible | winhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2021-07-24 07:45:48,219 p=10427 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:45:48,220 p=10427 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:47:31,494 p=10490 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:47:31,494 p=10490 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:47:31,628 p=10490 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:47:31,628 p=10490 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:47:31,628 p=10490 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:47:31,628 p=10490 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:47:31,629 p=10490 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:47:31,629 p=10490 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:47:31,629 p=10490 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:47:31,629 p=10490 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:47:31,629 p=10490 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:47:31,630 p=10490 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:47:31,630 p=10490 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:47:31,630 p=10490 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:47:31,630 p=10490 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:47:31,630 p=10490 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:47:31,630 p=10490 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:47:31,665 p=10490 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:47:35,118 p=10490 u=adminuser n=ansible | winhost | CHANGED | rc=0 >>
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 8ms, Maximum = 8ms, Average = 8ms
+
+
+2021-07-24 07:47:35,121 p=10490 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:47:35,123 p=10490 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:47:49,273 p=10512 u=adminuser n=ansible | ansible 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-24 07:47:49,274 p=10512 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/01-inventory/ansible.cfg as config file
+2021-07-24 07:47:49,402 p=10512 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-24 07:47:49,402 p=10512 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-24 07:47:49,402 p=10512 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-24 07:47:49,402 p=10512 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:47:49,403 p=10512 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-24 07:47:49,403 p=10512 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-24 07:47:49,403 p=10512 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-24 07:47:49,403 p=10512 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-24 07:47:49,403 p=10512 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-24 07:47:49,404 p=10512 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-24 07:47:49,404 p=10512 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-24 07:47:49,404 p=10512 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-24 07:47:49,404 p=10512 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-24 07:47:49,404 p=10512 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-24 07:47:49,404 p=10512 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-24 07:47:49,441 p=10512 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:47:49,921 p=10512 u=adminuser n=ansible | winhost | CHANGED | rc=0 >>
+winhost
+
+
+2021-07-24 07:47:49,922 p=10512 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:47:49,923 p=10512 u=adminuser n=ansible | META: ran handlers
+2021-07-24 07:48:14,238 p=10528 u=adminuser n=ansible | winhost | CHANGED | rc=0 >>
+
+
+    Directory: C:\Users\adminuser
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-r---        7/16/2016   1:23 PM                Desktop                                                               
+d-r---        7/24/2021   7:45 AM                Documents                                                             
+d-r---        7/16/2016   1:23 PM                Downloads                                                             
+d-r---        7/16/2016   1:23 PM                Favorites                                                             
+d-r---        7/16/2016   1:23 PM                Links                                                                 
+d-r---        7/16/2016   1:23 PM                Music                                                                 
+d-r---        7/16/2016   1:23 PM                Pictures                                                              
+d-----        7/16/2016   1:23 PM                Saved Games                                                           
+d-r---        7/16/2016   1:23 PM                Videos                                                                
+
+
+
+
+2021-07-24 07:51:28,233 p=10564 u=adminuser n=ansible | winhost | CHANGED => {
+    "changed": true, 
+    "checksum": "fdc662fe8b7724e64d490a280e89a69ceb02fb24", 
+    "dest": "c:/hosts.yml", 
+    "operation": "file_copy", 
+    "original_basename": "hosts.yml", 
+    "size": 472, 
+    "src": "hosts.yml"
+}
+2021-07-24 07:58:38,782 p=10632 u=adminuser n=ansible | ansiblemaster | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: adminuser@ansiblemaster: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2021-07-24 07:58:48,771 p=10632 u=adminuser n=ansible | [WARNING]: No python interpreters found for host winhost (tried ['/usr/bin/python', 'python3.7',
+'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python', '/usr/bin/python3',
+'python'])
+
+2021-07-24 07:58:48,775 p=10632 u=adminuser n=ansible | winhost | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Exception calling \"Create\" with \"1\" argument(s): \"At line:4 char:21\r\n+ def _ansiballz_main():\r\n+                     ~\r\nAn expression was expected after '('.\r\nAt line:13 char:27\r\n+     except (AttributeError, OSError):\r\n+                           ~\r\nMissing argument in parameter list.\r\nAt line:15 char:7\r\n+     if scriptdir is not None:\r\n+       ~\r\nMissing '(' after 'if' in if statement.\r\nAt line:22 char:7\r\n+     if sys.version_info < (3,):\r\n+       ~\r\nMissing '(' after 'if' in if statement.\r\nAt line:22 char:30\r\n+     if sys.version_info < (3,):\r\n+                              ~\r\nMissing expression after ','.\r\nAt line:22 char:25\r\n+     if sys.version_info < (3,):\r\n+                         ~\r\nThe '<' operator is reserved for future use.\r\nAt line:27 char:34\r\n+     def invoke_module(modlib_path, temp_path, json_params):\r\n+                                  ~\r\nMissing argument in parameter list.\r\nAt line:28 char:40\r\n+         z = zipfile.ZipFile(modlib_path, mode='a')\r\n+                                        ~\r\nMissing argument in parameter list.\r\nAt line:31 char:33\r\n+         zinfo = zipfile.ZipInfo()\r\n+                                 ~\r\nAn expression was expected after '('.\r\nAt line:34 char:25\r\n+         z.writestr(zinfo, sitecustomize)\r\n+                         ~\r\nMissing argument in parameter list.\r\nNot all parse errors were reported.  Correct the reported errors and try again.\"\r\nAt line:6 char:1\r\n+ $exec_wrapper = [ScriptBlock]::Create($split_parts[0])\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\r\n    + FullyQualifiedErrorId : ParseException\r\n \r\nThe expression after '&' in a pipeline element produced an object that was not valid. It must result in a command \r\nname, a script block, or a CommandInfo object.\r\nAt line:7 char:2\r\n+ &$exec_wrapper\r\n+  ~~~~~~~~~~~~~\r\n    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException\r\n    + FullyQualifiedErrorId : BadExpression\r\n ", 
+    "module_stdout": "", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
+2021-07-24 07:59:26,547 p=10660 u=adminuser n=ansible | ansiblemaster | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: adminuser@ansiblemaster: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2021-07-24 07:59:28,361 p=10660 u=adminuser n=ansible | winhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
