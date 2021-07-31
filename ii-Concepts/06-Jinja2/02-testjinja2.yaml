@@ -1,0 +1,14 @@
+---
+- name: Jinja2 filtering demo 2
+  hosts: localhost
+  vars:
+    tags:
+      - key: job
+        value: developer
+      - key: language
+        value: java
+
+  tasks:
+    - debug:
+        msg: '{{ tags | items2dict }}'
+#ansible-playbook -i localhost, 02-testjinja2.yaml
