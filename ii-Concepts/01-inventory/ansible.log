@@ -529,3 +529,41 @@ d-r---        7/16/2016   1:23 PM                Videos
     "changed": false, 
     "ping": "pong"
 }
+2021-07-31 04:06:58,401 p=10845 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: windows
+
+2021-07-31 04:06:58,401 p=10845 u=adminuser n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2021-07-31 04:07:27,531 p=10880 u=adminuser n=ansible | winhost | CHANGED | rc=0 >>
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=8ms TTL=109
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 8ms, Maximum = 8ms, Average = 8ms
+
+
+2021-07-31 04:57:53,838 p=11344 u=adminuser n=ansible | winsrv3 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname winsrv3: Temporary failure in name resolution", 
+    "unreachable": true
+}
+2021-07-31 04:58:36,957 p=11368 u=adminuser n=ansible | winsrv3 winhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname winsrv3 winhost: Temporary failure in name resolution", 
+    "unreachable": true
+}
+2021-07-31 04:59:27,663 p=11398 u=adminuser n=ansible | winhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host winhost port 22: Connection timed out", 
+    "unreachable": true
+}
+2021-07-31 05:17:59,890 p=11603 u=adminuser n=ansible | winsrv1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ntlm: HTTPConnectionPool(host='winsrv1', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fccd1131390>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", 
+    "unreachable": true
+}

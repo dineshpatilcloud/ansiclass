@@ -12,14 +12,22 @@
     - name: copy the files from this to remote
       win_copy:
         src: "{{sourcefile}}"
-        dest: C:/temp.txt
-      notify: my new handler
+        dest: C:/temp2.txt
+      notify: install telnet-client
+
+    - name: Install git
+      win_chocolatey:
+        name: git
+        state: present
 
   # Handlers: handlers that are executed as a notify key from a task
   handlers:
    - name: my new handler
      debug:
        msg: my files copied
+   - name: install telnet-client
+     win_feature:
+      name: telnet-client
   # Roles: list of roles to be imported into the play
   # you can add when: ansible_distribution == "windows"
 

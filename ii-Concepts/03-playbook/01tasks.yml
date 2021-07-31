@@ -15,6 +15,7 @@
       win_copy:
         src: test.txt
         dest: C:/temp.txt
+        
     - name: stop a bits service 
       win_service: 
         name: BITS

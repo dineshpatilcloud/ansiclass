@@ -253,3 +253,68 @@
     "size": 470, 
     "src": "hosts.yml"
 }
+2021-07-31 05:19:36,153 p=11659 u=adminuser n=ansible | winhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ntlm: HTTPSConnectionPool(host='winhost', port=5986): Max retries exceeded with url: /wsman (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7efc214d1150>, 'Connection to winhost timed out. (connect timeout=30)'))", 
+    "unreachable": true
+}
+2021-07-31 05:22:31,913 p=11824 u=adminuser n=ansible | winhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ntlm: HTTPSConnectionPool(host='winhost', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff4224e6150>: Failed to establish a new connection: [Errno 111] Connection refused',))", 
+    "unreachable": true
+}
+2021-07-31 05:22:35,382 p=11838 u=adminuser n=ansible | winhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ntlm: HTTPSConnectionPool(host='winhost', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f384c4d8150>: Failed to establish a new connection: [Errno 111] Connection refused',))", 
+    "unreachable": true
+}
+2021-07-31 05:26:55,126 p=11915 u=adminuser n=ansible | winhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2021-07-31 05:31:03,057 p=11950 u=adminuser n=ansible | ERROR! this task 'win_feature' has extra params, which is only allowed in the following modules: ansible.builtin.raw, ansible.legacy.add_host, ansible.builtin.meta, ansible.legacy.include, ansible.legacy.import_role, script, ansible.legacy.raw, group_by, ansible.builtin.shell, ansible.legacy.win_command, include, shell, include_vars, ansible.builtin.import_tasks, add_host, ansible.builtin.include_vars, ansible.legacy.include_role, ansible.builtin.include_role, ansible.legacy.include_vars, ansible.legacy.win_shell, ansible.legacy.group_by, import_tasks, ansible.builtin.set_fact, ansible.builtin.command, ansible.builtin.include_tasks, include_tasks, ansible.builtin.script, ansible.builtin.include, raw, meta, ansible.legacy.set_fact, ansible.builtin.add_host, ansible.legacy.script, ansible.legacy.import_tasks, win_command, ansible.builtin.win_shell, include_role, win_shell, set_fact, ansible.legacy.shell, ansible.legacy.command, import_role, ansible.legacy.meta, ansible.builtin.import_role, ansible.legacy.include_tasks, ansible.builtin.group_by, ansible.builtin.win_command, command
+2021-07-31 05:31:15,627 p=11958 u=adminuser n=ansible | winhost | FAILED! => {
+    "changed": false, 
+    "msg": "Failed to install Windows Feature: ArgumentNotValid: The role, role service, or feature name is not valid: 'telnet'. The name was not found."
+}
+2021-07-31 05:31:48,344 p=11974 u=adminuser n=ansible | winhost | CHANGED => {
+    "changed": true, 
+    "exitcode": "Success", 
+    "feature_result": [
+        {
+            "display_name": "Telnet Client", 
+            "id": 44, 
+            "message": [], 
+            "reboot_required": false, 
+            "restart_needed": false, 
+            "skip_reason": "NotSkipped", 
+            "success": true
+        }
+    ], 
+    "reboot_required": false, 
+    "success": true
+}
+2021-07-31 05:32:42,980 p=11993 u=adminuser n=ansible | winhost | SUCCESS => {
+    "changed": false, 
+    "exitcode": "NoChangeNeeded", 
+    "feature_result": [], 
+    "reboot_required": false, 
+    "success": true
+}
+2021-07-31 05:34:10,979 p=12013 u=adminuser n=ansible | winhost | CHANGED => {
+    "changed": true, 
+    "exitcode": "Success", 
+    "feature_result": [
+        {
+            "display_name": "Telnet Client", 
+            "id": 44, 
+            "message": [], 
+            "reboot_required": false, 
+            "restart_needed": false, 
+            "skip_reason": "NotSkipped", 
+            "success": true
+        }
+    ], 
+    "reboot_required": false, 
+    "success": true
+}

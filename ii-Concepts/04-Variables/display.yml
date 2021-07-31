@@ -3,6 +3,9 @@
   hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
 
+  vars_files:
+      - /tmp/ext_variables.yml
+
   vars:
     myname: "Dinesh Patil"
     company: 
@@ -18,12 +21,11 @@
     features:
        [Web-Server, Telnet-Client, Windows-Server-Backup]
 
-  vars_files:
-    - ext_variables.yml
+
 
   vars_prompt: # this will prompt for the input
     - name: servicename
-      private: false
+      private: true
 
   
   tasks:

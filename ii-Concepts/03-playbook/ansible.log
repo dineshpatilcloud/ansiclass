@@ -811,3 +811,125 @@ The offending line appears to be:
 
 2019-01-18 10:24:56,413 p=12624 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
 2019-01-18 10:24:56,414 p=12624 u=dinesh |  ansiwindows                : ok=1    changed=0    unreachable=0    failed=1   
+2021-07-31 06:26:47,617 p=12679 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: wingrp
+
+2021-07-31 06:26:47,620 p=12679 u=adminuser n=ansible | PLAY [wingrp] **********************************************************************************
+2021-07-31 06:26:47,620 p=12679 u=adminuser n=ansible | skipping: no hosts matched
+2021-07-31 06:26:47,620 p=12679 u=adminuser n=ansible | PLAY RECAP *************************************************************************************
+2021-07-31 06:30:26,417 p=12841 u=adminuser n=ansible | PLAY [wingrp] **********************************************************************************
+2021-07-31 06:30:26,468 p=12841 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************
+2021-07-31 06:30:26,589 p=12841 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f76e7a06650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:30:30,989 p=12841 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:30:31,001 p=12841 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************
+2021-07-31 06:30:34,837 p=12841 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 06:30:34,844 p=12841 u=adminuser n=ansible | TASK [stop a bits service] *********************************************************************
+2021-07-31 06:30:36,686 p=12841 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:30:36,691 p=12841 u=adminuser n=ansible | PLAY RECAP *************************************************************************************
+2021-07-31 06:30:36,691 p=12841 u=adminuser n=ansible | winhost                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:30:36,693 p=12841 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:31:37,658 p=12886 u=adminuser n=ansible | PLAY [wingrp] **********************************************************************************
+2021-07-31 06:31:37,670 p=12886 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************
+2021-07-31 06:31:37,773 p=12886 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1042186650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:31:41,075 p=12886 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:31:41,080 p=12886 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************
+2021-07-31 06:31:42,509 p=12886 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:31:42,514 p=12886 u=adminuser n=ansible | TASK [stop a bits service] *********************************************************************
+2021-07-31 06:31:44,328 p=12886 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:31:44,333 p=12886 u=adminuser n=ansible | PLAY RECAP *************************************************************************************
+2021-07-31 06:31:44,334 p=12886 u=adminuser n=ansible | winhost                    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:31:44,336 p=12886 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:35:00,413 p=13008 u=adminuser n=ansible | PLAY [wingrp] **********************************************************************************************
+2021-07-31 06:35:00,425 p=13008 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 06:35:00,515 p=13008 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdca06ef650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:35:04,103 p=13008 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:35:04,110 p=13008 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 06:35:05,473 p=13008 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:35:05,478 p=13008 u=adminuser n=ansible | TASK [stop a bits service] *********************************************************************************
+2021-07-31 06:35:07,519 p=13008 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 06:35:07,522 p=13008 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 06:35:07,524 p=13008 u=adminuser n=ansible | winhost                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:35:07,524 p=13008 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:40:35,721 p=13085 u=adminuser n=ansible | PLAY [all] *************************************************************************************************
+2021-07-31 06:40:35,732 p=13085 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 06:40:36,083 p=13085 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1dbd3bd4d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:40:36,110 p=13085 u=adminuser n=ansible | fatal: [ansiwindows]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1dbc19cb10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:40:39,664 p=13085 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:40:39,669 p=13085 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 06:40:43,959 p=13085 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 06:40:43,962 p=13085 u=adminuser n=ansible | RUNNING HANDLER [my new handler] ***************************************************************************
+2021-07-31 06:40:44,020 p=13085 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my files copied"
+}
+2021-07-31 06:40:44,023 p=13085 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 06:40:44,024 p=13085 u=adminuser n=ansible | ansiwindows                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:40:44,024 p=13085 u=adminuser n=ansible | winhost                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:40:44,024 p=13085 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:45:58,513 p=13191 u=adminuser n=ansible | PLAY [all] *************************************************************************************************
+2021-07-31 06:45:58,527 p=13191 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 06:45:58,833 p=13191 u=adminuser n=ansible | fatal: [ansiwindows]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f060407bb10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:45:58,890 p=13191 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f060529c4d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:46:02,446 p=13191 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:46:02,451 p=13191 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 06:46:03,951 p=13191 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:46:03,955 p=13191 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 06:46:03,956 p=13191 u=adminuser n=ansible | ansiwindows                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:46:03,958 p=13191 u=adminuser n=ansible | winhost                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:46:03,958 p=13191 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:47:18,263 p=13230 u=adminuser n=ansible | PLAY [all] *************************************************************************************************
+2021-07-31 06:47:18,275 p=13230 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 06:47:18,640 p=13230 u=adminuser n=ansible | fatal: [ansiwindows]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f56654cdb90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:47:18,659 p=13230 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f56666ed550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:47:21,850 p=13230 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:47:21,854 p=13230 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 06:47:25,991 p=13230 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 06:47:25,992 p=13230 u=adminuser n=ansible | RUNNING HANDLER [my new handler] ***************************************************************************
+2021-07-31 06:47:26,013 p=13230 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my files copied"
+}
+2021-07-31 06:47:26,015 p=13230 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 06:47:26,015 p=13230 u=adminuser n=ansible | ansiwindows                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:47:26,016 p=13230 u=adminuser n=ansible | winhost                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:47:26,016 p=13230 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:57:39,926 p=13485 u=adminuser n=ansible | PLAY [all] *************************************************************************************************
+2021-07-31 06:57:39,937 p=13485 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 06:57:40,058 p=13485 u=adminuser n=ansible | fatal: [ansiwindows]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa37817e990>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:57:40,080 p=13485 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa37816aed0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 06:57:43,531 p=13485 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:57:43,536 p=13485 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 06:57:44,907 p=13485 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 06:57:44,911 p=13485 u=adminuser n=ansible | TASK [Install git] *****************************************************************************************
+2021-07-31 06:58:48,240 p=13485 u=adminuser n=ansible | [WARNING]: Chocolatey was missing from this system, so it was installed during this task run.
+
+2021-07-31 06:58:48,242 p=13485 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 06:58:48,244 p=13485 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 06:58:48,248 p=13485 u=adminuser n=ansible | ansiwindows                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:58:48,249 p=13485 u=adminuser n=ansible | winhost                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 06:58:48,249 p=13485 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:03:54,906 p=13693 u=adminuser n=ansible | PLAY [all] *************************************************************************************************
+2021-07-31 07:03:54,918 p=13693 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 07:03:55,030 p=13693 u=adminuser n=ansible | fatal: [ansiwindows]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff4cd929a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 07:03:55,053 p=13693 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff4cd914f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 07:03:58,510 p=13693 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:03:58,517 p=13693 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 07:03:59,888 p=13693 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:03:59,893 p=13693 u=adminuser n=ansible | TASK [Install git] *****************************************************************************************
+2021-07-31 07:04:03,608 p=13693 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:04:03,612 p=13693 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 07:04:03,614 p=13693 u=adminuser n=ansible | ansiwindows                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:04:03,615 p=13693 u=adminuser n=ansible | winhost                    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:04:03,616 p=13693 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:04:56,016 p=13764 u=adminuser n=ansible | PLAY [all] *************************************************************************************************
+2021-07-31 07:04:56,028 p=13764 u=adminuser n=ansible | TASK [Gathering Facts] *************************************************************************************
+2021-07-31 07:04:56,154 p=13764 u=adminuser n=ansible | fatal: [winhost2]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPConnectionPool(host='winhost2', port=5985): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f304dd89f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 07:04:56,176 p=13764 u=adminuser n=ansible | fatal: [ansiwindows]: UNREACHABLE! => {"changed": false, "msg": "ntlm: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f304dd9e9d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))", "unreachable": true}
+2021-07-31 07:04:59,515 p=13764 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:04:59,528 p=13764 u=adminuser n=ansible | TASK [copy the files from this to remote] ******************************************************************
+2021-07-31 07:05:03,519 p=13764 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 07:05:03,524 p=13764 u=adminuser n=ansible | TASK [Install git] *****************************************************************************************
+2021-07-31 07:05:07,333 p=13764 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:05:07,336 p=13764 u=adminuser n=ansible | RUNNING HANDLER [install telnet-client] ********************************************************************
+2021-07-31 07:05:19,917 p=13764 u=adminuser n=ansible | changed: [winhost]
+2021-07-31 07:05:19,919 p=13764 u=adminuser n=ansible | PLAY RECAP *************************************************************************************************
+2021-07-31 07:05:19,919 p=13764 u=adminuser n=ansible | ansiwindows                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:05:19,919 p=13764 u=adminuser n=ansible | winhost                    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:05:19,919 p=13764 u=adminuser n=ansible | winhost2                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   

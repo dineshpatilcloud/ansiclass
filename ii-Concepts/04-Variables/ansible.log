@@ -1091,3 +1091,585 @@ The offending line appears to be:
 }
 2019-01-31 22:59:12,603 p=2613 u=root |  PLAY RECAP *************************************************************************************************************************************************************
 2019-01-31 22:59:12,603 p=2613 u=root |  ansiblewinsrv              : ok=7    changed=0    unreachable=0    failed=0   
+2021-07-31 07:13:41,740 p=14044 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:13:41,758 p=14044 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:13:45,558 p=14044 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:13:45,564 p=14044 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:13:45,589 p=14044 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:13:45,593 p=14044 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:13:45,617 p=14044 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:13:45,621 p=14044 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:13:45,648 p=14044 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:13:45,651 p=14044 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:13:45,652 p=14044 u=adminuser n=ansible | winhost                    : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:18:57,748 p=14238 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_prompt
+
+2021-07-31 07:18:57,749 p=14238 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_files
+
+2021-07-31 07:18:57,751 p=14238 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:18:57,763 p=14238 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:19:01,598 p=14238 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:19:01,603 p=14238 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:19:01,633 p=14238 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:19:01,638 p=14238 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:19:01,661 p=14238 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:19:01,665 p=14238 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:19:01,691 p=14238 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:19:01,695 p=14238 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:19:01,720 p=14238 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'servicesneedstodisable' is undefined\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/04-Variables/display.yml': line 50, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: display variables from external files\n      ^ here\n"}
+2021-07-31 07:19:01,722 p=14238 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:19:01,722 p=14238 u=adminuser n=ansible | winhost                    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:24:05,476 p=14430 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/04-Variables/ansible.cfg as config file
+2021-07-31 07:24:05,687 p=14430 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_prompt
+
+2021-07-31 07:24:05,689 p=14430 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_files
+
+2021-07-31 07:24:05,692 p=14430 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:24:05,702 p=14430 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:24:09,478 p=14430 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:24:09,482 p=14430 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:24:09,509 p=14430 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:24:09,513 p=14430 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:24:09,538 p=14430 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:24:09,543 p=14430 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:24:09,567 p=14430 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:24:09,571 p=14430 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:24:09,594 p=14430 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'servicesneedstodisable' is undefined\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/04-Variables/display.yml': line 50, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: display variables from external files\n      ^ here\n"}
+2021-07-31 07:24:09,596 p=14430 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:24:09,596 p=14430 u=adminuser n=ansible | winhost                    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:24:40,496 p=14473 u=adminuser n=ansible | ansible-playbook 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/04-Variables/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-31 07:24:40,496 p=14473 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/04-Variables/ansible.cfg as config file
+2021-07-31 07:24:40,697 p=14473 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-31 07:24:40,698 p=14473 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-31 07:24:40,699 p=14473 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-31 07:24:40,699 p=14473 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-31 07:24:40,699 p=14473 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-31 07:24:40,699 p=14473 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-31 07:24:40,700 p=14473 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-31 07:24:40,700 p=14473 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-31 07:24:40,700 p=14473 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-31 07:24:40,700 p=14473 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-31 07:24:40,700 p=14473 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-31 07:24:40,700 p=14473 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-31 07:24:40,701 p=14473 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-31 07:24:40,701 p=14473 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-31 07:24:40,701 p=14473 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-31 07:24:40,701 p=14473 u=adminuser n=ansible | PLAYBOOK: display.yml *****************************************************************************
+2021-07-31 07:24:40,702 p=14473 u=adminuser n=ansible | 1 plays in display.yml
+2021-07-31 07:24:40,707 p=14473 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_prompt
+
+2021-07-31 07:24:40,707 p=14473 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_files
+
+2021-07-31 07:24:40,708 p=14473 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:24:40,720 p=14473 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:24:44,038 p=14473 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:24:44,039 p=14473 u=adminuser n=ansible | META: ran handlers
+2021-07-31 07:24:44,044 p=14473 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:24:44,075 p=14473 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:24:44,078 p=14473 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:24:44,102 p=14473 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:24:44,105 p=14473 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:24:44,127 p=14473 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:24:44,130 p=14473 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:24:44,153 p=14473 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'servicesneedstodisable' is undefined\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/04-Variables/display.yml': line 50, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: display variables from external files\n      ^ here\n"}
+2021-07-31 07:24:44,154 p=14473 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:24:44,155 p=14473 u=adminuser n=ansible | winhost                    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:29:40,738 p=14567 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_prompt
+
+2021-07-31 07:29:40,740 p=14567 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_files
+
+2021-07-31 07:29:40,742 p=14567 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:29:40,751 p=14567 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:29:44,404 p=14567 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:29:44,410 p=14567 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:29:44,439 p=14567 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:29:44,444 p=14567 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:29:44,469 p=14567 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:29:44,475 p=14567 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:29:44,504 p=14567 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:29:44,509 p=14567 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:29:44,530 p=14567 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'servicesneedstodisable' is undefined\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/04-Variables/display.yml': line 50, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: display variables from external files\n      ^ here\n"}
+2021-07-31 07:29:44,533 p=14567 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:29:44,533 p=14567 u=adminuser n=ansible | winhost                    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:30:21,638 p=14600 u=adminuser n=ansible | ansible-playbook 2.9.24
+  config file = /home/adminuser/ansiclass/ii-Concepts/04-Variables/ansible.cfg
+  configured module search path = [u'/home/adminuser/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Feb 27 2021, 15:10:58) [GCC 7.5.0]
+2021-07-31 07:30:21,639 p=14600 u=adminuser n=ansible | Using /home/adminuser/ansiclass/ii-Concepts/04-Variables/ansible.cfg as config file
+2021-07-31 07:30:21,640 p=14600 u=adminuser n=ansible | setting up inventory plugins
+2021-07-31 07:30:21,666 p=14600 u=adminuser n=ansible | host_list declined parsing /home/adminuser/ansiclass/ii-Concepts/04-Variables/hosts.yml as it did not pass its verify_file() method
+2021-07-31 07:30:21,666 p=14600 u=adminuser n=ansible | script declined parsing /home/adminuser/ansiclass/ii-Concepts/04-Variables/hosts.yml as it did not pass its verify_file() method
+2021-07-31 07:30:21,671 p=14600 u=adminuser n=ansible | Parsed /home/adminuser/ansiclass/ii-Concepts/04-Variables/hosts.yml inventory source with yaml plugin
+2021-07-31 07:30:21,834 p=14600 u=adminuser n=ansible | Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2021-07-31 07:30:21,872 p=14600 u=adminuser n=ansible | Skipping callback 'actionable', as we already have a stdout callback.
+2021-07-31 07:30:21,872 p=14600 u=adminuser n=ansible | Skipping callback 'counter_enabled', as we already have a stdout callback.
+2021-07-31 07:30:21,872 p=14600 u=adminuser n=ansible | Skipping callback 'debug', as we already have a stdout callback.
+2021-07-31 07:30:21,872 p=14600 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-31 07:30:21,872 p=14600 u=adminuser n=ansible | Skipping callback 'dense', as we already have a stdout callback.
+2021-07-31 07:30:21,873 p=14600 u=adminuser n=ansible | Skipping callback 'full_skip', as we already have a stdout callback.
+2021-07-31 07:30:21,873 p=14600 u=adminuser n=ansible | Skipping callback 'json', as we already have a stdout callback.
+2021-07-31 07:30:21,873 p=14600 u=adminuser n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-07-31 07:30:21,873 p=14600 u=adminuser n=ansible | Skipping callback 'null', as we already have a stdout callback.
+2021-07-31 07:30:21,874 p=14600 u=adminuser n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-07-31 07:30:21,874 p=14600 u=adminuser n=ansible | Skipping callback 'selective', as we already have a stdout callback.
+2021-07-31 07:30:21,874 p=14600 u=adminuser n=ansible | Skipping callback 'skippy', as we already have a stdout callback.
+2021-07-31 07:30:21,874 p=14600 u=adminuser n=ansible | Skipping callback 'stderr', as we already have a stdout callback.
+2021-07-31 07:30:21,874 p=14600 u=adminuser n=ansible | Skipping callback 'unixy', as we already have a stdout callback.
+2021-07-31 07:30:21,875 p=14600 u=adminuser n=ansible | Skipping callback 'yaml', as we already have a stdout callback.
+2021-07-31 07:30:21,875 p=14600 u=adminuser n=ansible | PLAYBOOK: display.yml *****************************************************************************
+2021-07-31 07:30:21,875 p=14600 u=adminuser n=ansible | 1 plays in display.yml
+2021-07-31 07:30:21,881 p=14600 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_prompt
+
+2021-07-31 07:30:21,881 p=14600 u=adminuser n=ansible | [WARNING]: Found variable using reserved name: vars_files
+
+2021-07-31 07:30:21,883 p=14600 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:30:21,895 p=14600 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:30:22,035 p=14606 u=adminuser n=ansible | Using module file /usr/lib/python2.7/dist-packages/ansible/modules/windows/setup.ps1
+2021-07-31 07:30:22,035 p=14606 u=adminuser n=ansible | Pipelining is enabled.
+2021-07-31 07:30:22,036 p=14606 u=adminuser n=ansible | <winhost> ESTABLISH WINRM CONNECTION FOR USER: adminuser on PORT 5985 TO winhost
+2021-07-31 07:30:22,130 p=14606 u=adminuser n=ansible | EXEC (via pipeline wrapper)
+2021-07-31 07:30:25,212 p=14600 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:30:25,214 p=14600 u=adminuser n=ansible | META: ran handlers
+2021-07-31 07:30:25,219 p=14600 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:30:25,246 p=14600 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:30:25,249 p=14600 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:30:25,276 p=14600 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:30:25,280 p=14600 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:30:25,306 p=14600 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:30:25,310 p=14600 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:30:25,339 p=14600 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {
+    "msg": "The task includes an option with an undefined variable. The error was: 'servicesneedstodisable' is undefined\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/04-Variables/display.yml': line 50, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: display variables from external files\n      ^ here\n"
+}
+2021-07-31 07:30:25,341 p=14600 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:30:25,341 p=14600 u=adminuser n=ansible | winhost                    : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:31:58,451 p=14644 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:31:58,462 p=14644 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:32:01,874 p=14644 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:32:01,879 p=14644 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:32:01,906 p=14644 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil1\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:32:01,910 p=14644 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:32:01,936 p=14644 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:32:01,940 p=14644 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:32:01,966 p=14644 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:32:01,972 p=14644 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:32:01,999 p=14644 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil1 first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2021-07-31 07:32:02,002 p=14644 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:32:02,003 p=14644 u=adminuser n=ansible | winhost                    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:32:57,746 p=14689 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:32:57,759 p=14689 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:33:01,197 p=14689 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:33:01,203 p=14689 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:33:01,229 p=14689 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil1\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:33:01,234 p=14689 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:33:01,257 p=14689 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:33:01,260 p=14689 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:33:01,283 p=14689 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:33:01,286 p=14689 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:33:01,309 p=14689 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil1 first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2021-07-31 07:33:01,312 p=14689 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:33:01,312 p=14689 u=adminuser n=ansible | winhost                    : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:36:26,463 p=14744 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:36:26,476 p=14744 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:36:30,348 p=14744 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:36:30,353 p=14744 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:36:30,386 p=14744 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil1\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:36:30,391 p=14744 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:36:30,416 p=14744 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:36:30,419 p=14744 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:36:30,442 p=14744 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:36:30,446 p=14744 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:36:30,466 p=14744 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil1 first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2021-07-31 07:36:30,469 p=14744 u=adminuser n=ansible | TASK [take input from user] ***********************************************************************
+2021-07-31 07:36:30,495 p=14744 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "the input provided by you is dhcp\n"
+}
+2021-07-31 07:36:30,497 p=14744 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:36:30,498 p=14744 u=adminuser n=ansible | winhost                    : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:37:16,519 p=14783 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:37:16,530 p=14783 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:37:19,827 p=14783 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:37:19,832 p=14783 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:37:19,861 p=14783 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil1\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:37:19,865 p=14783 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:37:19,895 p=14783 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:37:19,902 p=14783 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:37:19,933 p=14783 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:37:19,938 p=14783 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:37:19,965 p=14783 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil1 first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2021-07-31 07:37:19,970 p=14783 u=adminuser n=ansible | TASK [take input from user] ***********************************************************************
+2021-07-31 07:37:19,994 p=14783 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "the input provided by you is dns\n"
+}
+2021-07-31 07:37:19,997 p=14783 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:37:19,998 p=14783 u=adminuser n=ansible | winhost                    : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:38:35,289 p=14830 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-07-31 07:38:35,300 p=14830 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-07-31 07:38:38,733 p=14830 u=adminuser n=ansible | ok: [winhost]
+2021-07-31 07:38:38,737 p=14830 u=adminuser n=ansible | TASK [Display Variable name] **********************************************************************
+2021-07-31 07:38:38,761 p=14830 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "my name is  \"Dinesh Patil1\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2021-07-31 07:38:38,767 p=14830 u=adminuser n=ansible | TASK [display list items] *************************************************************************
+2021-07-31 07:38:38,790 p=14830 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2021-07-31 07:38:38,795 p=14830 u=adminuser n=ansible | TASK [display array items] ************************************************************************
+2021-07-31 07:38:38,816 p=14830 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2021-07-31 07:38:38,819 p=14830 u=adminuser n=ansible | TASK [display variables from external files] ******************************************************
+2021-07-31 07:38:38,840 p=14830 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil1 first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2021-07-31 07:38:38,844 p=14830 u=adminuser n=ansible | TASK [take input from user] ***********************************************************************
+2021-07-31 07:38:38,864 p=14830 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "the input provided by you is dns\n"
+}
+2021-07-31 07:38:38,868 p=14830 u=adminuser n=ansible | TASK [get the variables from fact] ****************************************************************
+2021-07-31 07:38:38,887 p=14830 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "The os family is Windows\n"
+}
+2021-07-31 07:38:38,889 p=14830 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-07-31 07:38:38,890 p=14830 u=adminuser n=ansible | winhost                    : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-07-31 07:39:26,700 p=14869 u=adminuser n=ansible | winhost | FAILED! => {
+    "msg": "The module win_setup was not found in configured module paths"
+}
+2021-07-31 07:39:37,855 p=14883 u=adminuser n=ansible | winhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "12/07/2018", 
+        "ansible_bios_version": "090008 ", 
+        "ansible_date_time": {
+            "date": "2021-07-31", 
+            "day": "31", 
+            "epoch": "1627717175.94903", 
+            "hour": "07", 
+            "iso8601": "2021-07-31T07:39:35Z", 
+            "iso8601_basic": "20210731T073935949030", 
+            "iso8601_basic_short": "20210731T073935", 
+            "iso8601_micro": "2021-07-31T07:39:35.949030Z", 
+            "minute": "39", 
+            "month": "07", 
+            "second": "35", 
+            "time": "07:39:35", 
+            "tz": "UTC", 
+            "tz_offset": "+00:00", 
+            "weekday": "Saturday", 
+            "weekday_number": "6", 
+            "weeknumber": "30", 
+            "year": "2021"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.14393.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\adminuser\\AppData\\Roaming", 
+            "COMPUTERNAME": "winhost", 
+            "ChocolateyInstall": "C:\\ProgramData\\chocolatey", 
+            "ChocolateyLastPathUpdate": "132721882751005690", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\adminuser", 
+            "LOCALAPPDATA": "C:\\Users\\adminuser\\AppData\\Local", 
+            "LOGONSERVER": "\\\\winhost", 
+            "NUMBER_OF_PROCESSORS": "2", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 85 Stepping 4, GenuineIntel", 
+            "PROCESSOR_LEVEL": "6", 
+            "PROCESSOR_REVISION": "5504", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\adminuser\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\adminuser\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\ADMINU~1\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\ADMINU~1\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "winhost", 
+            "USERDOMAIN_ROAMINGPROFILE": "winhost", 
+            "USERNAME": "adminuser", 
+            "USERPROFILE": "C:\\Users\\adminuser", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "winhost", 
+        "ansible_hostname": "winhost", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet 2", 
+                "default_gateway": "10.0.2.1", 
+                "dns_domain": "iwjm3q1psdcehptjvs2p1slosb.ax.internal.cloudapp.net", 
+                "interface_index": 2, 
+                "interface_name": "Microsoft Hyper-V Network Adapter #2", 
+                "macaddress": "00:0D:3A:AA:6C:BF"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "10.0.2.5", 
+            "fe80::8559:9fe0:854:8985"
+        ], 
+        "ansible_kernel": "10.0.14393.0", 
+        "ansible_lastboot": "2021-07-31 03:53:57Z", 
+        "ansible_machine_id": "S-1-5-21-1407953237-3617391010-488143141", 
+        "ansible_memtotal_mb": 8192, 
+        "ansible_netbios_name": "winhost", 
+        "ansible_nodename": "winhost", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [
+            "GenuineIntel", 
+            "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 1, 
+        "ansible_processor_threads_per_core": 2, 
+        "ansible_processor_vcpus": 2, 
+        "ansible_product_name": "Virtual Machine", 
+        "ansible_product_serial": "0000-0007-2972-2672-1120-0468-52", 
+        "ansible_reboot_pending": null, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "Microsoft Corporation", 
+        "ansible_uptime_seconds": 13540, 
+        "ansible_user_dir": "C:\\Users\\adminuser", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "adminuser", 
+        "ansible_user_sid": "S-1-5-21-1407953237-3617391010-488143141-500", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "Hyper-V", 
+        "ansible_win_rm_certificate_expires": "2022-07-31 05:35:59", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2021-07-31 07:39:57,245 p=14898 u=adminuser n=ansible | winhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "12/07/2018", 
+        "ansible_bios_version": "090008 ", 
+        "ansible_date_time": {
+            "date": "2021-07-31", 
+            "day": "31", 
+            "epoch": "1627717195.27912", 
+            "hour": "07", 
+            "iso8601": "2021-07-31T07:39:55Z", 
+            "iso8601_basic": "20210731T073955263497", 
+            "iso8601_basic_short": "20210731T073955", 
+            "iso8601_micro": "2021-07-31T07:39:55.263497Z", 
+            "minute": "39", 
+            "month": "07", 
+            "second": "55", 
+            "time": "07:39:55", 
+            "tz": "UTC", 
+            "tz_offset": "+00:00", 
+            "weekday": "Saturday", 
+            "weekday_number": "6", 
+            "weeknumber": "30", 
+            "year": "2021"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.14393.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\adminuser\\AppData\\Roaming", 
+            "COMPUTERNAME": "winhost", 
+            "ChocolateyInstall": "C:\\ProgramData\\chocolatey", 
+            "ChocolateyLastPathUpdate": "132721882751005690", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\adminuser", 
+            "LOCALAPPDATA": "C:\\Users\\adminuser\\AppData\\Local", 
+            "LOGONSERVER": "\\\\winhost", 
+            "NUMBER_OF_PROCESSORS": "2", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 85 Stepping 4, GenuineIntel", 
+            "PROCESSOR_LEVEL": "6", 
+            "PROCESSOR_REVISION": "5504", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\adminuser\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\adminuser\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\ADMINU~1\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\ADMINU~1\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "winhost", 
+            "USERDOMAIN_ROAMINGPROFILE": "winhost", 
+            "USERNAME": "adminuser", 
+            "USERPROFILE": "C:\\Users\\adminuser", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "winhost", 
+        "ansible_hostname": "winhost", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet 2", 
+                "default_gateway": "10.0.2.1", 
+                "dns_domain": "iwjm3q1psdcehptjvs2p1slosb.ax.internal.cloudapp.net", 
+                "interface_index": 2, 
+                "interface_name": "Microsoft Hyper-V Network Adapter #2", 
+                "macaddress": "00:0D:3A:AA:6C:BF"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "10.0.2.5", 
+            "fe80::8559:9fe0:854:8985"
+        ], 
+        "ansible_kernel": "10.0.14393.0", 
+        "ansible_lastboot": "2021-07-31 03:53:57Z", 
+        "ansible_machine_id": "S-1-5-21-1407953237-3617391010-488143141", 
+        "ansible_memtotal_mb": 8192, 
+        "ansible_netbios_name": "winhost", 
+        "ansible_nodename": "winhost", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [
+            "GenuineIntel", 
+            "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz", 
+            "GenuineIntel", 
+            "Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 1, 
+        "ansible_processor_threads_per_core": 2, 
+        "ansible_processor_vcpus": 2, 
+        "ansible_product_name": "Virtual Machine", 
+        "ansible_product_serial": "0000-0007-2972-2672-1120-0468-52", 
+        "ansible_reboot_pending": null, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "Microsoft Corporation", 
+        "ansible_uptime_seconds": 13559, 
+        "ansible_user_dir": "C:\\Users\\adminuser", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "adminuser", 
+        "ansible_user_sid": "S-1-5-21-1407953237-3617391010-488143141-500", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "Hyper-V", 
+        "ansible_win_rm_certificate_expires": "2022-07-31 05:35:59", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}

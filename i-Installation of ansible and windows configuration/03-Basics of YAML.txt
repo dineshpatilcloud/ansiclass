@@ -1,3 +1,5 @@
+
+Extension is YAML or yml
 <#YAML
 
 #http://yaml-online-parser.appspot.com/
@@ -13,7 +15,6 @@ Every YAMl files should start with
 end with
 ...
 
-
 #>
 
 #simple YAML
@@ -25,7 +26,7 @@ hosts: win1
 key1: this is first value
 key2: this is second value
 
-key: value
+key: 'value'
 ...
 
 # for string we can use " , '    quotes are not required but in case of complexity we should use it.
@@ -34,6 +35,7 @@ key: value
 # Example 2 mutiple line string
 ---
 
+# \n when | then It will keep new line as it is 
 key1: |
  this is line 
  across multiple 
@@ -42,6 +44,7 @@ key1: |
  # Example 3 mutiple line string
 ---
 
+# Here it will replace new line with space
 key2: >
  this is line 
  across multiple 
@@ -66,9 +69,7 @@ key3: 2
 
  #if you want to represent number as string add quotes
 
- 
-# Example 6 mutiple line string
-
+# Boolean Values
 ---
 statement1: false
 statement2: False
@@ -99,7 +100,9 @@ same stands for True, true, TRUE , on , ON, On
 #Check below
 ---
 key1: value1
-- example list 
+- example list
+- listitem2
+- list item3 
 ...
 
 ---
@@ -108,7 +111,7 @@ key1: value1
 ...
 
 
-#try below
+# try below
 key1:
  - list item1
  - list item2
@@ -163,11 +166,7 @@ dictionary1:
 
 
 Create list of roles
-Web Servers
-1) WebServer
-2) Telnet
-3) SMTP
-4) DFS
+0
 
 
 
