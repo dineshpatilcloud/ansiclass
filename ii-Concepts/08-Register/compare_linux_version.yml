@@ -1,0 +1,56 @@
+---
+-
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Display Register value
+      shell:  hostname
+      register: hostnamevar
+      when: ansible_distribution_major_version | int < 19
+
+    - name: Show output
+      debug:
+        var: hostnamevar.stdout_lines[0]
+      
+...
+
+# tasks:
+#   - name: patching linux 16
+#     apt: vim16
+#     when: ansible_distribution_major_version | int <= 16
+
+#   - name: patching linux 18
+#     apt: vim18
+#     when: ansible_distribution_major_version | int > 16
+
+tasks: 
+ - name: patching linux
+   apt: "vim{{ansible_distribution_major_version}}"
+
+
+   16   vim16
+   17   vim17
+   18   vim18
+   19   vim19
+        vim20
+  
+
+tasks:
+  - name: Patching Linux
+    apt: "{{item.packagename}}"
+    loop:
+      - {version: 16 , packagename: vim16}
+      - {version: 18 , packagename: vim18}
+    when: item.version == ansible_distribution_major_version
+
+
+vars:
+  package : 
+      - {version: 16 , packagename: vim16}
+      - {version: 18 , packagename: vim18}
+
+tasks: 
+  - name : patching Linux
+    apt: vim16 
+    when: 

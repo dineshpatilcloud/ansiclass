@@ -1,6 +1,6 @@
 ---
 -
-  hosts: win1 lin1
+  hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
@@ -8,10 +8,8 @@
       win_copy:
         content: "Welcome to {{ item }} ansible\n"
         dest: c:\temp\test.txt
-      loop: # or you can use with_items:
-           - dinesh
-           - basant
-      when: ansible_distribution == "Microsoft Windows Server Datacenter"
+      loop: "{{lookup('inventory_hostnames','all', wantlist=True)}}"
+      when: ansible_distribution == "Microsoft Windows Server 2016 Datacenter"
 
 # you can also use
 # loop:

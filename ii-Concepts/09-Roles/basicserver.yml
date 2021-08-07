@@ -2,11 +2,14 @@
 -
 
 
-  hosts: all
+  hosts: azwindows
 
   # Roles: list of roles to be imported into the play
   roles:
-    - common
+    - role: common
+      vars:
+        msg: "This is from playbook"
+
 
 
 ...

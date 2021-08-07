@@ -11,7 +11,7 @@
       loop:
            - dinesh
            - basant
-      when: ansible_distribution == "Microsoft Windows Server Datacenter"
+      when: ansible_distribution == "Microsoft Windows Server 2016 Datacenter"
 
     
 

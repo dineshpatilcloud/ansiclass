@@ -1,0 +1,219 @@
+2021-08-07 04:38:51,340 p=5054 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:38:51,354 p=5054 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:38:54,263 p=5054 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:38:54,263 p=5054 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:38:54,952 p=5054 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:38:54,981 p=5054 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 04:38:55,081 p=5054 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=dinesh) 
+2021-08-07 04:38:55,082 p=5054 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=basant) 
+2021-08-07 04:38:58,809 p=5054 u=adminuser n=ansible | failed: [winhost] (item=dinesh) => {"ansible_loop_var": "item", "changed": true, "checksum": "483aceff0e769a9ee7f09468070c1766a2be8532", "dest": "c:\\temp\\test.txt", "item": "dinesh", "msg": "failed to copy file /home/adminuser/.ansible/tmp/ansible-local-5054rnxzVB/tmp5AAdX1: object at destination parent dir 'c:\\temp' is currently a file", "operation": "file_copy", "original_basename": "tmp5AAdX1", "size": 26, "src": null}
+2021-08-07 04:39:02,278 p=5054 u=adminuser n=ansible | failed: [winhost] (item=basant) => {"ansible_loop_var": "item", "changed": true, "checksum": "80c8a94e314a7bee49d566c915f2e4fccc7bdf17", "dest": "c:\\temp\\test.txt", "item": "basant", "msg": "failed to copy file /home/adminuser/.ansible/tmp/ansible-local-5054rnxzVB/tmpUjkBDM: object at destination parent dir 'c:\\temp' is currently a file", "operation": "file_copy", "original_basename": "tmpUjkBDM", "size": 26, "src": null}
+2021-08-07 04:39:02,286 p=5054 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:39:02,287 p=5054 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:39:02,287 p=5054 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:40:48,099 p=5251 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:40:48,115 p=5251 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:40:50,001 p=5251 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:40:50,003 p=5251 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:40:51,640 p=5251 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:40:51,646 p=5251 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 04:40:51,734 p=5251 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=dinesh) 
+2021-08-07 04:40:51,739 p=5251 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=basant) 
+2021-08-07 04:40:55,775 p=5251 u=adminuser n=ansible | failed: [winhost] (item=dinesh) => {"ansible_loop_var": "item", "changed": true, "checksum": "483aceff0e769a9ee7f09468070c1766a2be8532", "dest": "c:\\temp\\test.txt", "item": "dinesh", "msg": "failed to copy file /home/adminuser/.ansible/tmp/ansible-local-5251w0vbHA/tmpc6HLEf: Destination directory 'c:\\temp' does not exist", "operation": "file_copy", "original_basename": "tmpc6HLEf", "size": 26, "src": null}
+2021-08-07 04:40:59,410 p=5251 u=adminuser n=ansible | failed: [winhost] (item=basant) => {"ansible_loop_var": "item", "changed": true, "checksum": "80c8a94e314a7bee49d566c915f2e4fccc7bdf17", "dest": "c:\\temp\\test.txt", "item": "basant", "msg": "failed to copy file /home/adminuser/.ansible/tmp/ansible-local-5251w0vbHA/tmp4yHNKL: Destination directory 'c:\\temp' does not exist", "operation": "file_copy", "original_basename": "tmp4yHNKL", "size": 26, "src": null}
+2021-08-07 04:40:59,418 p=5251 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:40:59,418 p=5251 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:40:59,419 p=5251 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:43:09,885 p=5448 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:43:09,899 p=5448 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:43:11,782 p=5448 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:43:11,783 p=5448 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:43:13,414 p=5448 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:43:13,422 p=5448 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 04:43:13,511 p=5448 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=dinesh) 
+2021-08-07 04:43:13,512 p=5448 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=basant) 
+2021-08-07 04:43:17,142 p=5448 u=adminuser n=ansible | changed: [winhost] => (item=dinesh)
+2021-08-07 04:43:20,724 p=5448 u=adminuser n=ansible | changed: [winhost] => (item=basant)
+2021-08-07 04:43:20,730 p=5448 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:43:20,730 p=5448 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:43:20,731 p=5448 u=adminuser n=ansible | winhost                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:54:12,146 p=5761 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:54:12,161 p=5761 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:54:14,896 p=5761 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:54:14,898 p=5761 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:54:15,626 p=5761 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:54:15,633 p=5761 u=adminuser n=ansible | TASK [add several users] **************************************************************************
+2021-08-07 04:54:15,684 p=5761 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser1', u'groups': u'wheel'}) 
+2021-08-07 04:54:15,686 p=5761 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser2', u'groups': u'root'}) 
+2021-08-07 04:54:16,276 p=5761 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser1', u'groups': u'wheel'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "wheel", "name": "testuser1"}, "msg": "Group wheel does not exist"}
+2021-08-07 04:54:16,742 p=5761 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser2', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser2"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser2", "rc": 1}
+2021-08-07 04:54:16,749 p=5761 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:54:16,751 p=5761 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:54:16,751 p=5761 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:55:27,090 p=6058 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:55:27,103 p=6058 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:55:28,864 p=6058 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:55:28,864 p=6058 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:55:30,400 p=6058 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:55:30,407 p=6058 u=adminuser n=ansible | TASK [add several users] **************************************************************************
+2021-08-07 04:55:30,462 p=6058 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser1', u'groups': u'root'}) 
+2021-08-07 04:55:30,463 p=6058 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser2', u'groups': u'root'}) 
+2021-08-07 04:55:30,990 p=6058 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser1', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser1"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser1", "rc": 1}
+2021-08-07 04:55:31,292 p=6058 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser2', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser2"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser2", "rc": 1}
+2021-08-07 04:55:31,306 p=6058 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:55:31,306 p=6058 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:55:31,307 p=6058 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:56:35,918 p=6313 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:56:35,933 p=6313 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:56:37,668 p=6313 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:56:37,671 p=6313 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:56:39,184 p=6313 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:56:39,191 p=6313 u=adminuser n=ansible | TASK [add several users] **************************************************************************
+2021-08-07 04:56:39,247 p=6313 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser1', u'groups': u'root'}) 
+2021-08-07 04:56:39,251 p=6313 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser2', u'groups': u'root'}) 
+2021-08-07 04:56:39,782 p=6313 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser1', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser1"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser1", "rc": 1}
+2021-08-07 04:56:40,074 p=6313 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser2', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser2"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser2", "rc": 1}
+2021-08-07 04:56:40,079 p=6313 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:56:40,079 p=6313 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:56:40,080 p=6313 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:59:08,098 p=6634 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:59:08,112 p=6634 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:59:09,833 p=6634 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:59:09,833 p=6634 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:59:11,711 p=6634 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:59:11,716 p=6634 u=adminuser n=ansible | TASK [add several users] **************************************************************************
+2021-08-07 04:59:11,767 p=6634 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser1', u'groups': u'root'}) 
+2021-08-07 04:59:11,769 p=6634 u=adminuser n=ansible | skipping: [winhost] => (item={u'name': u'testuser2', u'groups': u'root'}) 
+2021-08-07 04:59:12,338 p=6634 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser1', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser1"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser1", "rc": 1}
+2021-08-07 04:59:12,629 p=6634 u=adminuser n=ansible | failed: [ansiblemaster] (item={u'name': u'testuser2', u'groups': u'root'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "root", "name": "testuser2"}, "msg": "useradd: Permission denied.\nuseradd: cannot lock /etc/passwd; try again later.\n", "name": "testuser2", "rc": 1}
+2021-08-07 04:59:12,633 p=6634 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:59:12,634 p=6634 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:59:12,634 p=6634 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 04:59:37,280 p=6893 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:59:37,298 p=6893 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:59:37,494 p=6893 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The powershell shell family is incompatible with the sudo become plugin"}
+2021-08-07 04:59:38,644 p=6893 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 04:59:38,646 p=6893 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 04:59:38,657 p=6893 u=adminuser n=ansible | TASK [add several users] **************************************************************************
+2021-08-07 04:59:39,636 p=6893 u=adminuser n=ansible | changed: [ansiblemaster] => (item={u'name': u'testuser1', u'groups': u'root'})
+2021-08-07 04:59:40,155 p=6893 u=adminuser n=ansible | changed: [ansiblemaster] => (item={u'name': u'testuser2', u'groups': u'root'})
+2021-08-07 04:59:40,161 p=6893 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:59:40,162 p=6893 u=adminuser n=ansible | ansiblemaster              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:59:40,163 p=6893 u=adminuser n=ansible | winhost                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 05:03:47,779 p=7148 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 05:03:47,794 p=7148 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 05:03:49,625 p=7148 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 05:03:49,626 p=7148 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 05:03:51,661 p=7148 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 05:03:51,668 p=7148 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 05:03:51,758 p=7148 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=dinesh) 
+2021-08-07 05:03:51,761 p=7148 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=basant) 
+2021-08-07 05:03:55,698 p=7148 u=adminuser n=ansible | changed: [winhost] => (item=dinesh)
+2021-08-07 05:03:59,565 p=7148 u=adminuser n=ansible | changed: [winhost] => (item=basant)
+2021-08-07 05:03:59,572 p=7148 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 05:03:59,573 p=7148 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 05:03:59,574 p=7148 u=adminuser n=ansible | winhost                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-07 05:12:31,620 p=7390 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: win1
+
+2021-08-07 05:12:31,621 p=7390 u=adminuser n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: lin1
+
+2021-08-07 05:12:31,623 p=7390 u=adminuser n=ansible | PLAY [win1 lin1] **********************************************************************************
+2021-08-07 05:12:31,624 p=7390 u=adminuser n=ansible | skipping: no hosts matched
+2021-08-07 05:12:31,624 p=7390 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 05:12:53,102 p=7409 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 05:12:53,116 p=7409 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 05:12:54,909 p=7409 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 05:12:54,910 p=7409 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 05:12:56,768 p=7409 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 05:12:56,774 p=7409 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 05:12:56,871 p=7409 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: winhost,ansiblemaster. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2021-08-07 05:12:56,874 p=7409 u=adminuser n=ansible | fatal: [ansiblemaster]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: winhost,ansiblemaster. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2021-08-07 05:12:56,878 p=7409 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 05:12:56,879 p=7409 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 05:12:56,879 p=7409 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 05:13:24,929 p=7589 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 05:13:24,942 p=7589 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 05:13:26,179 p=7589 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 05:13:26,181 p=7589 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 05:13:28,173 p=7589 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 05:13:28,179 p=7589 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 05:13:28,231 p=7589 u=adminuser n=ansible | skipping: [winhost] => (item=winhost) 
+2021-08-07 05:13:28,234 p=7589 u=adminuser n=ansible | skipping: [winhost] => (item=ansiblemaster) 
+2021-08-07 05:13:28,258 p=7589 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=winhost) 
+2021-08-07 05:13:28,261 p=7589 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=ansiblemaster) 
+2021-08-07 05:13:28,267 p=7589 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 05:13:28,267 p=7589 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 05:13:28,268 p=7589 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 05:14:00,136 p=7709 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 05:14:00,149 p=7709 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 05:14:01,377 p=7709 u=adminuser n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ansiblemaster should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible 
+releases. A future Ansible release will default to using the discovered platform python for this 
+host. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for
+ more information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-07 05:14:01,385 p=7709 u=adminuser n=ansible | ok: [ansiblemaster]
+2021-08-07 05:14:03,495 p=7709 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 05:14:03,501 p=7709 u=adminuser n=ansible | TASK [Copy Files] *********************************************************************************
+2021-08-07 05:14:03,595 p=7709 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=winhost) 
+2021-08-07 05:14:03,597 p=7709 u=adminuser n=ansible | skipping: [ansiblemaster] => (item=ansiblemaster) 
+2021-08-07 05:14:07,301 p=7709 u=adminuser n=ansible | changed: [winhost] => (item=winhost)
+2021-08-07 05:14:10,941 p=7709 u=adminuser n=ansible | changed: [winhost] => (item=ansiblemaster)
+2021-08-07 05:14:10,954 p=7709 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 05:14:10,955 p=7709 u=adminuser n=ansible | ansiblemaster              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2021-08-07 05:14:10,956 p=7709 u=adminuser n=ansible | winhost                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

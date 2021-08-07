@@ -1,0 +1,50 @@
+2021-08-07 04:19:27,697 p=4558 u=adminuser n=ansible | PLAY [all] ****************************************************************************************
+2021-08-07 04:19:27,861 p=4558 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:19:27,964 p=4558 u=adminuser n=ansible | fatal: [ansiblemaster]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: adminuser@ansiblemaster: Permission denied (publickey,password).", "unreachable": true}
+2021-08-07 04:19:45,245 p=4558 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:19:45,255 p=4558 u=adminuser n=ansible | TASK [check Ip Address] ***************************************************************************
+2021-08-07 04:19:45,361 p=4558 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "this is for windows [u'10.0.2.5', u'fe80::8559:9fe0:854:8985'] this is OS for our host Microsoft Windows Server 2016 Datacenter\n"
+}
+2021-08-07 04:19:45,365 p=4558 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:19:45,365 p=4558 u=adminuser n=ansible | ansiblemaster              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:19:45,366 p=4558 u=adminuser n=ansible | winhost                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:22:50,188 p=4666 u=adminuser n=ansible | PLAY [azwindows] **********************************************************************************
+2021-08-07 04:22:50,201 p=4666 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:22:53,668 p=4666 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:22:53,673 p=4666 u=adminuser n=ansible | TASK [check Ip Address] ***************************************************************************
+2021-08-07 04:22:53,708 p=4666 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "this is for windows 10.0.2.5 this is OS for our host Microsoft Windows Server 2016 Datacenter\n"
+}
+2021-08-07 04:22:53,711 p=4666 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:22:53,712 p=4666 u=adminuser n=ansible | winhost                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:24:05,220 p=4705 u=adminuser n=ansible | PLAY [azwindows] **********************************************************************************
+2021-08-07 04:24:05,233 p=4705 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:24:08,434 p=4705 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:24:08,440 p=4705 u=adminuser n=ansible | TASK [check Ip Address] ***************************************************************************
+2021-08-07 04:24:08,472 p=4705 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: list object has no element 1\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/05-facts/display.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: check Ip Address\n      ^ here\n"}
+2021-08-07 04:24:08,476 p=4705 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:24:08,477 p=4705 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:25:10,876 p=4768 u=adminuser n=ansible | PLAY [azwindows] **********************************************************************************
+2021-08-07 04:25:10,890 p=4768 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:25:14,101 p=4768 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:25:14,107 p=4768 u=adminuser n=ansible | TASK [check Ip Address] ***************************************************************************
+2021-08-07 04:25:14,141 p=4768 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'list object' has no attribute 'default_gateway'\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/05-facts/display.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: check Ip Address\n      ^ here\n"}
+2021-08-07 04:25:14,145 p=4768 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:25:14,146 p=4768 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:26:56,687 p=4856 u=adminuser n=ansible | PLAY [azwindows] **********************************************************************************
+2021-08-07 04:26:56,700 p=4856 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:27:00,115 p=4856 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:27:00,121 p=4856 u=adminuser n=ansible | TASK [check Ip Address] ***************************************************************************
+2021-08-07 04:27:00,151 p=4856 u=adminuser n=ansible | fatal: [winhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'list object' has no attribute 'default_gateway'\n\nThe error appears to be in '/home/adminuser/ansiclass/ii-Concepts/05-facts/display.yml': line 7, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: check Ip Address\n      ^ here\n"}
+2021-08-07 04:27:00,154 p=4856 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:27:00,154 p=4856 u=adminuser n=ansible | winhost                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-08-07 04:28:28,797 p=4904 u=adminuser n=ansible | PLAY [azwindows] **********************************************************************************
+2021-08-07 04:28:28,810 p=4904 u=adminuser n=ansible | TASK [Gathering Facts] ****************************************************************************
+2021-08-07 04:28:32,254 p=4904 u=adminuser n=ansible | ok: [winhost]
+2021-08-07 04:28:32,259 p=4904 u=adminuser n=ansible | TASK [check Ip Address] ***************************************************************************
+2021-08-07 04:28:32,291 p=4904 u=adminuser n=ansible | ok: [winhost] => {
+    "msg": "this is for windows 10.0.2.5 this is OS for our host 10.0.2.1\n"
+}
+2021-08-07 04:28:32,294 p=4904 u=adminuser n=ansible | PLAY RECAP ****************************************************************************************
+2021-08-07 04:28:32,296 p=4904 u=adminuser n=ansible | winhost                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

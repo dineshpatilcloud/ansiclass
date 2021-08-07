@@ -1,15 +1,16 @@
 ---
 -
-  hosts: win1 lin1
+  hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
     - name: Display Register value
       win_shell:  hostname
       register: hostnamevar
+      when: ansible_distribution == "Microsoft Windows Server 2016 Datacenter"
 
     - name: Show output
       debug:
-        var: hostnamevar
+        var: hostnamevar.stdout_lines[0]
       
 ...

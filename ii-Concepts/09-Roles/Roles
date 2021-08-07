@@ -2,7 +2,7 @@ Larger Projects are made easier to manage
 
 Roles are grouped with logical structure , making easier to share
 
-like web server , dn server
+like web server , db server
 
 directory structure
 
@@ -47,6 +47,7 @@ Any copy, script, template or include tasks (in the role) can reference files in
 
 
 
+Create your role :
 
 ansible-galaxy init myrole
 

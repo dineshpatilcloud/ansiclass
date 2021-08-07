@@ -14,3 +14,7 @@
   loop: "{{services}}"
   notify: send_a_mail
   tags: stop_service
+
+- name: "Printing Msg"
+  debug:
+    msg: "{{msg}}"

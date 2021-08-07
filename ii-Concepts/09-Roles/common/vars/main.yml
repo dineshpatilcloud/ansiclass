@@ -3,3 +3,4 @@
 services:
   - BITS
   - wuauserv
+msg1: "test from vars file"

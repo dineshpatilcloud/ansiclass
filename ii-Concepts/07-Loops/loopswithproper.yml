@@ -2,6 +2,8 @@
 -
   hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
+  become: yes 
+  become_user: root
 
   tasks:
        - name: add several users
@@ -10,9 +12,9 @@
            state: present
            groups: "{{ item.groups }}"
          loop:
-            - { name: 'testuser1', groups: 'wheel' }
+            - { name: 'testuser1', groups: 'root' }
             - { name: 'testuser2', groups: 'root' }
-
+         when: ansible_distribution != "Microsoft Windows Server 2016 Datacenter"
 # you can also use
 # loop:
 #    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 

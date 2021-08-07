@@ -6,12 +6,12 @@
   tasks: 
     - name: Copy Files
       win_copy:
-        content: "Welcome to {{ item }} ansible\n"
-        dest: c:\temp\test.txt
+        content: "Welcome to {{ item[0] }} ansible\n"
+        dest: c:\temp\test2.txt
       loop:
-           - dinesh
-           - basant
-      when: ansible_distribution == "Microsoft Windows Server Datacenter"
+           - [dinesh,kundan]
+           - [basant,sandeep]
+      when: ansible_distribution == "Microsoft Windows Server 2016 Datacenter"
 
 # you can also use
 # loop:
