@@ -5,6 +5,7 @@
 
   vars_files:
       - /tmp/ext_variables.yml
+      - ext_variables.yml
 
   vars:
     myname: "Dinesh Patil"
